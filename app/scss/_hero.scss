@@ -22,11 +22,7 @@
     height: 1800px;
     inset: 0;
     z-index: -1;
-    background: radial-gradient(
-      rgb(0, 76, 255) 0%,
-      rgba(185, 19, 135, 1) 20%,
-      $dark 50%
-    );
+    background: radial-gradient(rgb(0, 76, 255) 0%, rgba(185, 19, 135, 1) 20%, $dark 50%);
     opacity: 0.6;
   }
 
@@ -51,10 +47,10 @@
   .heroimg-cont {
     .hero-img {
       position: absolute;
-      width: 1066px;
-      height: 600px;
+      width: 720px;
+      height: 400px;
       top: 50%;
-      right: 0;
+      right: 15%;
       transform: translateY(-50%) translateX(20%);
       border-radius: 10px;
       overflow: hidden;
