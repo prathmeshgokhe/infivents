@@ -1,0 +1,152 @@
+@use "./variables" as *;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: $dark;
+  font-family: $montserrat-regular;
+  color: $light;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+
+  li {
+    font-family: $montserrat-regular;
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+title,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+h1 {
+  font-family: $montserrat-semibold;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-family: $montserrat-semibold;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-family: $montserrat-semibold;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-family: $montserrat-bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $montserrat-medium;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.title {
+  font-family: $montserrat-bold;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -2px;
+}
+
+.helvetica-regular {
+  font-family: $helvetica-regular;
+  letter-spacing: 0;
+}
+
+.helvetica-medium {
+  font-family: $helvetica-medium;
+  letter-spacing: 0;
+}
+
+.helvetica-bold {
+  font-family: $helvetica-bold;
+  letter-spacing: 0;
+}
+
+.roboto-regular {
+  font-family: $roboto-regular;
+}
+
+.roboto-medium {
+  font-family: $roboto-medium;
+}
+
+.roboto-bold {
+  font-family: $roboto-bold;
+}
+
+button {
+  font-family: $montserrat-medium;
+  font-size: 12px;
+  width: fit-content;
+  background-color: $light;
+  color: $dark;
+  padding: 10px 15px;
+  border-radius: 12px;
+
+  border: 1px solid $dark;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+  background-color: $light;
+
+  &:hover {
+    transition: all 200ms ease-in;
+    border: 1px solid $gray;
+    background-color: $gray;
+    color: $light;
+  }
+}
+
+.button-active {
+  border: 1px solid $pink;
+  background-color: $pink;
+  border: 1px solid $pink;
+
+  &:hover {
+    border: 1px solid $pink;
+    background-color: $pink;
+    color: $dark;
+  }
+}
